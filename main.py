@@ -5,6 +5,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 import Util.DateTimeUtil
+import Util.StringUtil
 
 if __name__=='__main__':
 	#test datetime util function
@@ -21,3 +22,7 @@ if __name__=='__main__':
 	d2= Util.DateTimeUtil.getyesterday(d1)
 	days=Util.DateTimeUtil.getdiffdays(d1,d2)
 	print days
+
+
+	Util.StringUtil.showFormat()
+	print Util.StringUtil.trimSymbol('123,1:432""432')
